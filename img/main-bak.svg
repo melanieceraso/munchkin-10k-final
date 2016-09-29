@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg>
+<svg id="masthead_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 10" version="1.1" y="0px" x="0px" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 1280 10">
+<style>@keyframes leftGradient {
+			0% 	  { stop-color: rgb(255, 208, 150); }
+			60%   { stop-color: rgb(255,	245,	234); }
+			80%   { stop-color: rgb(255, 245,	234); }
+			100% 	{ stop-color: rgb(255, 208, 150); }
+		}
+		@-webkit-keyframes leftGradient {}
+		@-moz-keyframes leftGradient {}
+		@keyframes rightGradient {
+			0%{ stop-color: rgb(204, 166, 120); }
+			20% 	{ stop-color: rgb(255, 208, 150); }
+			60% 	{ stop-color: rgb(255, 208, 150); }
+			100%{ stop-color: rgb(204, 166, 120); }
+		}
+		@-webkit-keyframes rightGradient {
+		}
+		@-moz-keyframes rightGradient {
+		}
+		#left { -webkit-animation: leftGradient 20s infinite; animation: leftGradient 20s infinite; }
+		#right { -webkit-animation: rightGradient 20s infinite; animation: rightGradient 20s infinite; }</style>
+<linearGradient id="mastGradient">
+<stop id="left" stop-color="" offset="0"/>
+<stop id="right" stop-color="" offset="1"/>
+</linearGradient>
+<rect id="masthead" height="100%" width="100%" y="0" x="0" fill="url(#mastGradient)"/>
+</svg>

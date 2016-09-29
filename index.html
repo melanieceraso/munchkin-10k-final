@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/munchkin.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" />
+    <title>munchkin.me</title>
+</head>
+<body id="body">
+    <header>
+        <h1><span class="icon-h"></span> munchkin.me</h1>
+        <small>Kill the  monsters &bull; Steal the treasure &bull; Stab your buddy &bull; Track your stuff</small>
+    </header>
+    <div class="con">
+        <section class="cl-ib-cb">
+            <div class="cl">
+                <label for="cl">Character level</label>
+                <input type="number" id="cl" value="1" max="10" onchange="ccp();" />
+            </div>
+            <div class="ib">
+                <label for="ib">Item bonuses</label>
+                <input type="number" id="ib" value="0" onchange="ccp();" />
+            </div>
+            <div class="cb">
+                <label for="cp">Combat points</label>
+                <input type="number" id="cp" value="1"> <button onclick="ng();">reset</button>
+                <noscript>
+                    <span class="icon-h g"></span>
+                    <span class="bb">Character level + Item Bonuses = Combat Points</span>
+                </noscript>
+            </div>
+            <div id="clm">
+                <span class="icon-h g"></span>
+                <span class="bb"><span id="clmsg"></span></span>
+            </div>
+        </section>
+        <section id="kom">
+            <h2>kill-o-meter</h2>
+            <div class="ml">
+                <label for="ml">Monster level</label>
+                <input id="ml" type="number" value="0" min="0" onchange="hmtbm();" /> <button class="reset" onclick="rk();">reset</button>
+                <noscript>
+                    <span class="icon-h g"></span>
+                    <span class="bb">
+                        The one with the most points wins! Roll a 5 or 6 to run away!
+                    </span>
+                </noscript>
+            </div>
+            <div id="fm">
+                <span class="icon-h g"></span>
+                <span class="bb">The monster is <span id="status">lookin' to pick a fight!</span>
+                <span id="pts"></span> <span id="mm"></span></span>
+            </div>
+        </section>
+        <section class="dom">
+            <h2>roll-o-matic</h2>
+            <div>
+                <input id="dres" disabled>
+                <span id="hi" class="icon-h"></span>
+                <button onClick="dr();">roll dice</button>
+            </div>
+            <div id="dm">
+                <span class="icon-h g"></span>
+                <span class="bb"><span id="dmsg"></span></span>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <noscript><a href="//bit.ly/2cU2ZHE">Psst! Looks like you've got javascript turned off.</a></noscript>
+        <p>Munchkin is a <a href="//bit.ly/2cXVHG1">Steve Jackson Game</a>.</p>
+        <p>Created for 10k Apart 2016 by Melanie Ceraso and Jeffrey Kern.</p>
+    </footer>
+    <script src="js/munchkin.min.js"></script>
+</body>
+</html>
