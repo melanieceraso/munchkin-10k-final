@@ -24,14 +24,17 @@ a:active {
 .sans-serif {
   font-family: Verdana, Geneva, sans-serif;
 }
-@font-face {
+/* @font-face {
   font-family: 'icons';
-  src: url('icons.woff?205f65') format('woff');
+  src:  url('icons.woff?205f65') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+} */
 .icon-h {
-  font-family: 'icons' !important;
+  background: transparent url("../img/h.gif") no-repeat center center;
+  background-size: contain;
+  display: inline-block;
+  /* font-family: 'icons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -39,11 +42,11 @@ a:active {
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
-.icon-h:before {
+/* .icon-h:before {
   content: "\e900";
-}
+} */
 /* non-js ui */
 button,
 .dom,
@@ -130,7 +133,7 @@ body {
 }
 @media (min-width: 1024px) {
   body {
-    background: url('../img/main-bak.svg');
+    background: url('../img/bg.svg');
   }
 }
 header,
@@ -162,6 +165,10 @@ h1 {
     .text-gradient;
   } */
 }
+h1 span {
+  width: 64px;
+  height: 45px;
+}
 h2 {
   color: #765429;
   margin: 20px 0 0;
@@ -188,13 +195,24 @@ footer {
   text-align: center;
 }
 .icon-h.g {
-  font-size: 30px;
-  display: inline-block;
   margin-bottom: 10px;
-  color: #aa871c;
   position: relative;
-  top: 5px;
+  top: 18px;
   left: 0;
+  background: transparent url("../img/h.gif") no-repeat center center;
+  background-size: contain;
+  display: inline-block;
+  /* font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  width: 32px;
+  height: 23px;
 }
 #dres {
   font-size: 36px;
@@ -208,12 +226,24 @@ footer {
   position: relative;
 }
 .dom div #hi {
-  font-size: 30px;
-  color: #bbb;
-  position: absolute;
-  left: 13px;
-  top: 20px;
+  background: transparent url("../img/h.gif") no-repeat center center;
+  background-size: contain;
+  display: inline-block;
+  /* font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   z-index: 1;
+  width: 48px;
+  position: absolute;
+  height: 34px;
+  left: 12px;
+  top: 17px;
 }
 .bb {
   font-family: Verdana, Geneva, sans-serif;
